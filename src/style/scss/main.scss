@@ -1,0 +1,24 @@
+// $text-color: #403F3D;
+// $main-color: #E1D4C9;
+@import "home/hero.scss";
+$main-color: #E1D4C9;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+html {
+  background-color: $main-color;
+  font-size: 16px;
+  }
+
+.container {
+  max-width: 1440px;
+  padding: 20px 40px 40px 40px;
+  margin: 0 auto;
+}
+
+
+

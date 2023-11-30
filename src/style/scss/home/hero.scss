@@ -1,0 +1,94 @@
+$text-color: #403F3D;
+$text-color-light: #E1D4C9;
+$text-color-coffee: #B0907A;
+$font: 'Inter', sans-serif;
+
+header {
+    display: grid;
+    grid-template-columns: 100px 1fr 72px;
+    align-items: center;
+    margin-bottom: 20px;
+    nav {
+    
+        ul {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+            gap: 40px;
+            li {
+                a {
+                    font-family: $font;
+                    font-weight: 600;
+                    line-height: 150%;
+                    text-decoration: none;
+                    color: $text-color;
+                }
+            }
+        }
+    }
+
+    .menu_item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        a {
+            margin-right: 8px;
+            text-decoration: none;
+            font-family: $font;
+            font-weight: 600;
+            line-height: 150%;
+            color: $text-color;
+        }
+    }
+}
+
+.hero {
+    position: relative;
+    height: 644px;
+    border-radius: 40px; 
+    background: url(../../../img/img-hero.jpg), lightgray 50% / cover no-repeat;
+    .offer {
+        position: absolute;
+        margin: 6em 0px 0px 6em;
+        display: flex;
+        width: 530px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 40px; 
+        h1 {
+            color: $text-color-light;
+            font-family: $font;
+            font-size: 4.5rem;
+            font-weight: 600;
+            line-height: 105%; 
+            span {
+                font-style: italic;
+                color: $text-color-coffee;
+            }
+        }
+        p {
+            font-family: $font;
+            color: $text-color-light;
+            font-weight: 400;
+            line-height: 150%;
+        }
+        .offer_primary {
+            cursor: pointer;
+            display: flex;
+            width: 200px;
+            padding: 20px 78px;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            border-radius: 100px;
+            background: $text-color-light;
+            border: none;
+            font-family: $font;
+            color: $text-color;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 150%; 
+        }
+    }
+}
