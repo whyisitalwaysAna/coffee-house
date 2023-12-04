@@ -4,12 +4,13 @@ $text-color-coffee: #B0907A;
 $font: 'Inter', sans-serif;
 
 .about {
+    margin-bottom: 100px;
     h2 {
         font-size: 3.75rem;
         font-family: $font;
         color: $text-color;
         font-weight: 600;
-        text-align: center;
+        text-align: left;
         margin-bottom: 40px;
         line-height: 125%;
         span {
@@ -19,32 +20,73 @@ $font: 'Inter', sans-serif;
     }
 
     &_grid {
-        display: flex;
-        flex-flow: column wrap;
-
-        .about_photo_1 {
-            background: url(../../../img/about-1.jpg) center center /cover no-repeat;
-            width: 660px;
-            height: 590px;
-            border-radius: 20px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(660px, 1fr));
+        justify-items: center;
+        gap: 40px;
+        // grid-template-columns: 1fr 1fr;
+        // grid-template-rows: 1fr 1fr; 
+        .col-1 {
+            grid-template-rows: subgrid;
+            .about_photo_1 {
+                margin-bottom: 40px;
+                background: url(../../../img/about-1.jpg) center center /cover no-repeat;
+                width: 660px;
+                height: 590px;
+                border-radius: 20px;
+                }
+            .about_photo_3 {
+                background: url(../../../img/about-3.jpg) center center /cover no-repeat;
+                width: 660x;
+                height: 430px;
+                border-radius: 20px;
+            }
         }
-        .about_photo_2 {
+        .col-2 {
+            grid-template-rows: subgrid;
+            .about_photo_2 {
             background: url(../../../img/about-2.jpg) center center /cover no-repeat;
             width: 660x;
             height: 430px;
             border-radius: 20px;
-        }
-        .about_photo_3 {
-            background: url(../../../img/about-3.jpg) center center /cover no-repeat;
-            width: 660x;
-            height: 430px;
-            border-radius: 20px;
-        }
-        .about_photo_4 {
-            background: url(../../../img/about-4.jpg) center center /cover no-repeat;
-            width: 660px;
-            height: 590px;
-            border-radius: 20px;
+            margin-bottom: 40px;
+            }
+            .about_photo_4 {
+                background: url(../../../img/about-4.jpg) center center /cover no-repeat;
+                width: 660px;
+                height: 590px;
+                border-radius: 20px;
+            }
         }
     }
+
+    // &_grid {
+    //     display: flex;
+    //     flex-flow: column wrap;
+
+    //     .about_photo_1 {
+    //         background: url(../../../img/about-1.jpg) center center /cover no-repeat;
+    //         width: 660px;
+    //         height: 590px;
+    //         border-radius: 20px;
+    //     }
+    //     .about_photo_2 {
+    //         background: url(../../../img/about-2.jpg) center center /cover no-repeat;
+    //         width: 660x;
+    //         height: 430px;
+    //         border-radius: 20px;
+    //     }
+    //     .about_photo_3 {
+    //         background: url(../../../img/about-3.jpg) center center /cover no-repeat;
+    //         width: 660x;
+    //         height: 430px;
+    //         border-radius: 20px;
+    //     }
+    //     .about_photo_4 {
+    //         background: url(../../../img/about-4.jpg) center center /cover no-repeat;
+    //         width: 660px;
+    //         height: 590px;
+    //         border-radius: 20px;
+    //     }
+    // }
 }

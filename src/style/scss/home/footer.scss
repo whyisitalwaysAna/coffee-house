@@ -1,0 +1,99 @@
+$text-color: #403F3D;
+$text-color-light: #E1D4C9;
+$text-color-coffee: #B0907A;
+$font: 'Inter', sans-serif;
+
+
+footer {
+    min-height: 450px;
+    border-radius: 40px;
+    background: #665F55;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    .footer_offer {
+        width: 530px;
+        height: 250px;
+        h2 {
+            font-family: $font;
+            color: $text-color-light;
+            font-size: 3.75rem;
+            font-weight: 600;
+            line-height: 125%;
+            margin-bottom: 40px; 
+           span {
+            font-style: italic;
+            color: $text-color-coffee;
+           } 
+        }
+
+    .social-media {
+        display: flex;
+        width: 204px;
+        justify-content: space-between;
+        .twitter {
+            display: flex;
+            width: 60px;
+            height: 60px;
+            justify-content: center;
+            align-items: center; 
+            border-radius: 50%;
+            border: 1px solid #C1B6AD; 
+        }
+        .instagram {
+            display: flex;
+            width: 60px;
+            height: 60px;
+            justify-content: center;
+            align-items: center; 
+            border-radius: 50%;
+            border: 1px solid #C1B6AD; 
+        }
+        .facebook {
+            display: flex;
+            width: 60px;
+            height: 60px;
+            justify-content: center;
+            align-items: center; 
+            border-radius: 50%;
+            border: 1px solid #C1B6AD; 
+        }
+    }
+    }
+
+    .footer_contacts {
+        width: 530px;
+        height: 186px;
+        .descr {
+            color: $text-color-light;
+            font-size: 1.5rem;
+            font-family: $font;
+            font-weight: 600;
+            line-height: 125%;
+            margin-bottom: 40px;
+        }
+        ul {
+            color: $text-color-light;
+            font-family: $font;
+            line-height: 150%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 16px;
+            margin-left: 25px;
+            .pin {
+                list-style-image: url("../../../icons/pin-alt.svg");
+            }
+            .phone {
+                list-style-image: url("../../../icons/phone.svg");
+            }
+            .clock {
+                list-style-image: url("../../../icons/clock.svg");
+            }
+        }
+    }
+}
