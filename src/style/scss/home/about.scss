@@ -1,0 +1,50 @@
+$text-color: #403F3D;
+$text-color-light: #E1D4C9;
+$text-color-coffee: #B0907A;
+$font: 'Inter', sans-serif;
+
+.about {
+    h2 {
+        font-size: 3.75rem;
+        font-family: $font;
+        color: $text-color;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 40px;
+        line-height: 125%;
+        span {
+            color: $text-color-coffee;
+            font-style: italic;
+        }
+    }
+
+    &_grid {
+        display: flex;
+        flex-flow: column wrap;
+
+        .about_photo_1 {
+            background: url(../../../img/about-1.jpg) center center /cover no-repeat;
+            width: 660px;
+            height: 590px;
+            border-radius: 20px;
+        }
+        .about_photo_2 {
+            background: url(../../../img/about-2.jpg) center center /cover no-repeat;
+            width: 660x;
+            height: 430px;
+            border-radius: 20px;
+        }
+        .about_photo_3 {
+            background: url(../../../img/about-3.jpg) center center /cover no-repeat;
+            width: 660x;
+            height: 430px;
+            border-radius: 20px;
+        }
+        .about_photo_4 {
+            background: url(../../../img/about-4.jpg) center center /cover no-repeat;
+            width: 660px;
+            height: 590px;
+            border-radius: 20px;
+        }
+    }
+}

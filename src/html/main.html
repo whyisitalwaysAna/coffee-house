@@ -4,16 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="yes" name="apple-mobile-web-app-capable" />
     <title>Coffee House</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style/css/main.min.css">
     <link rel="stylesheet" href="../style/scss/css/hero.min.css">
+    <link rel="stylesheet" href="../style/scss/css/favorite.min.css">
+    <link rel="stylesheet" href="../style/scss/css/about.min.css">
 </head>
 
 <body>
     <div class="container">
+
         <header>
             <div class="logo">
                 <img src="../icons/logo.png" alt="resource-coffee-house">
@@ -31,10 +35,11 @@
                 <img src="../icons/coffee-cup.png" alt="coffee-cup">
             </div>
         </header>
+
         <main>
             <section class="hero">
                 <div class="offer">
-                    <h1><span>Enjoy</span> 1premium coffee at our charming cafe</h1>
+                    <h1><span>Enjoy</span> premium coffee at our charming cafe</h1>
                     <p class="offer_subtitle">With its inviting atmosphere and delicious coffee options, the Coffee
                         House
                         Resource is a popular destination for coffee lovers and those seeking a warm and inviting space
@@ -43,6 +48,50 @@
                 </div>
             </section>
         </main>
+
+        <section class="favorite">
+            <h2>Choose your <span>favorite</span> coffee</h2>
+            <div class="slider">
+                <div class="arrow_left">
+                    <div class="arr">
+                        <div></div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img class="slide_img" src="../img/s'mores-frappucino.png" alt="s'mores-frappucino">
+                    <div class="slide_header">S’mores Frappuccino</div>
+                    <div class="slide_descr">This new drink takes an espresso and mixes it with brown sugar and cinnamon
+                        before being topped
+                        with oat milk.</div>
+                    <div class="slide_price">$5.50</div>
+                </div>
+                <div class="arrow_right">
+                    <div class="arr">
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="control">
+                <div class="c1"></div>
+                <div class="c2"></div>
+                <div class="c3"></div>
+            </div>
+        </section>
+
+        <section class="about">
+            <h2>Resource is <span>the perfect and cozy place</span> where you can enjoy a variety of hot beverages, relax, catch up
+                with friends, or get some work done.</h2>
+                <div class="about_grid">
+                    <div class="col-1">
+                        <div class="about_photo_1"></div>
+                        <div class="about_photo_3"></div>
+                    </div>
+                    <div class="col-2">
+                        <div class="about_photo_2"></div>
+                        <div class="about_photo_4"></div>
+                    </div>
+                </div>
+        </section>
     </div>
     <script src="../js/main.js"></script>
 </body>
