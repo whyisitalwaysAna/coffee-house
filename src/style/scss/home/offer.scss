@@ -38,6 +38,7 @@ $font: 'Inter', sans-serif;
             }
         }
         .offer_btns {
+            cursor: pointer;
             display: flex;
             .offer_apple {
                 display: flex;
@@ -48,6 +49,7 @@ $font: 'Inter', sans-serif;
                 border: 1px solid #665F55;
                 margin-right: 20px;
                 background: none;
+                text-decoration: none;
                 .btn-descr {
                     margin-left: 8px;
                     display: flex;
@@ -78,6 +80,7 @@ $font: 'Inter', sans-serif;
                 border-radius: 100px;
                 border: 1px solid #665F55;
                 background: none;
+                text-decoration: none;
                 .btn-descr {
                     display: flex;
                     flex-direction: column;

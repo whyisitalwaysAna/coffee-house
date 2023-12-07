@@ -24,8 +24,7 @@ $font: 'Inter', sans-serif;
         grid-template-columns: repeat(auto-fill, minmax(660px, 1fr));
         justify-items: center;
         gap: 40px;
-        // grid-template-columns: 1fr 1fr;
-        // grid-template-rows: 1fr 1fr; 
+        border-radius: 20px;
         .col-1 {
             grid-template-rows: subgrid;
             .about_photo_1 {
@@ -34,12 +33,24 @@ $font: 'Inter', sans-serif;
                 width: 660px;
                 height: 590px;
                 border-radius: 20px;
+                transition: 1s;
                 }
+            .about_photo_1:hover {
+                cursor: pointer;
+                transition: 1s;
+                transform: scale(105%);
+            }
             .about_photo_3 {
                 background: url(../../../img/about-3.jpg) center center /cover no-repeat;
                 width: 660x;
                 height: 430px;
                 border-radius: 20px;
+                transition: 1s;
+            }
+            .about_photo_3:hover {
+                cursor: pointer;
+                transition: 1s;
+                transform: scale(105%);
             }
         }
         .col-2 {
@@ -50,12 +61,24 @@ $font: 'Inter', sans-serif;
             height: 430px;
             border-radius: 20px;
             margin-bottom: 40px;
+            transition: 1s;
+            }
+            .about_photo_2:hover {
+                cursor: pointer;
+                transition: 1s;
+                transform: scale(105%);
             }
             .about_photo_4 {
                 background: url(../../../img/about-4.jpg) center center /cover no-repeat;
                 width: 660px;
                 height: 590px;
                 border-radius: 20px;
+                transition: 1s;
+            }
+            .about_photo_4:hover {
+                cursor: pointer;
+                transition: 1s;
+                transform: scale(105%);
             }
         }
     }

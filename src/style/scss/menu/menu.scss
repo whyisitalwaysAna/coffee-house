@@ -116,13 +116,33 @@ $font: 'Inter', sans-serif;
         gap: 40px;
         flex-wrap: wrap;
         .menu_card {
+            position: relative;
             display: flex;
             height: 506px;
             width: 310px;
             flex-direction: column;
             align-items: center; 
             border-radius: 40px;
-            border: 1px solid #C1B6AD; 
+            border: 1px solid #C1B6AD;
+            cursor: pointer;
+            &:before {
+                content: "";
+                position: absolute;
+                z-index: -1;
+                left: 14px;
+                bottom: 18px;
+                background: #d3c9bf;
+                height: 24px;
+                width: 24px;
+                border-radius: 32px;
+                transform: scale(1);
+                transform-origin: 50% 50%;
+                transition: transform 0.25s ease-out;
+              }
+            
+              &:hover:before {
+                transform: scale(1.5);
+              }
             .card_photo-1 {
                 border-radius: 40px;
                 width: 100%;

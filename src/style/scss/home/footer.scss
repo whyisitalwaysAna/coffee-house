@@ -86,6 +86,13 @@ footer {
             align-items: flex-start;
             gap: 16px;
             margin-left: 25px;
+            text-decoration: none;
+            li {
+                a {
+                    text-decoration: none;
+                    color: $text-color-light;
+                }
+            }
             .pin {
                 list-style-image: url("../../../icons/pin-alt.svg");
             }

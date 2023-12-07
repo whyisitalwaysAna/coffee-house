@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="yes" name="apple-mobile-web-app-capable" />
     <title>Coffee House</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon//favicon-16x16.png">
+    <link rel="manifest" href="../favicon//site.webmanifest">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
@@ -26,9 +30,9 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="#">Favorite coffee</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Mobile app</a></li>
+                    <li><a href="#favorite">Favorite coffee</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#mobile-app">Mobile app</a></li>
                     <li><a href="#">Contact us</a></li>
                 </ul>
             </nav>
@@ -46,12 +50,12 @@
                         House
                         Resource is a popular destination for coffee lovers and those seeking a warm and inviting space
                         to enjoy their favorite beverage.</p>
-                    <button class="offer_primary">Menu</button>
+                    <a href="../html/menu.html" class="offer_primary"><span class="menu_span">Menu</span></a>
                 </div>
             </section>
         </main>
 
-        <section class="favorite">
+        <section id="favorite" class="favorite">
             <h2>Choose your <span>favorite</span> coffee</h2>
             <div class="slider">
                 <div class="arrow_left">
@@ -80,7 +84,7 @@
             </div>
         </section>
 
-        <section class="about">
+        <section id="about" class="about">
             <h2>Resource is <span>the perfect and cozy place</span> where you can enjoy a variety of hot beverages,
                 relax, catch up
                 with friends, or get some work done.</h2>
@@ -96,27 +100,27 @@
             </div>
         </section>
 
-        <section class="offer">
+        <section id="mobile-app" class="offer">
             <div class="offer_grid">
                 <div class="offer_grid_col-1">
                     <h2><span>Download</span> our apps to start ordering</h2>
                     <p>Download the Resource app today and experience the comfort of ordering your favorite coffee from
                         wherever you are</p>
                     <div class="offer_btns">
-                        <button class="offer_apple">
+                        <a href="https://www.apple.com/app-store/" target="_blank" class="offer_apple">
                             <img src="../icons/apple.svg" alt="apple-logotype">
                             <div class="btn-descr">
                                 <div class="available">Available on the</div>
                                 <div class="platform">App Store</div>
                             </div>
-                        </button>
-                        <button class="offer_google">
+                        </a>
+                        <a href="https://play.google.com/store/games?hl=ru&gl=US&pli=1" target="_blank" class="offer_google">
                             <img src="../icons/google.svg" alt="google-play-logotype">
                             <div class="btn-descr">
                                 <div class="available">Available on</div>
                                 <div class="platform">Google Play</div>
                             </div>
-                        </button>
+                        </a>
                     </div>
                 </div>
                 <div class="offer_grid_col-2">
@@ -130,22 +134,23 @@
             <div class="footer_offer">
                 <h2>Sip, Savor, Smile. <span>It’s coffee time!</span></h2>
                 <div class="social-media">
-                    <div class="twitter">
+                    <a href="https://twitter.com/?lang=ru" target="_blank" class="twitter">
                         <img src="../icons/twitter.svg" alt="twitter-logo">
-                    </div>
-                    <div class="instagram">
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" class="instagram">
                         <img src="../icons/instagram.svg" alt="instagram-logo">
-                    </div>
-                    <div class="facebook">
+                    </a>
+                    <a href="https://www.facebook.com/?locale=ru_RU" target="_blank" class="facebook">
                         <img src="../icons/facebook.svg" alt="facebook-logo">
-                    </div>
+                    </a>
                 </div>
             </div>
             <div class="footer_contacts">
                 <div class="descr">Contact us</div>
                 <ul>
-                    <li class="pin">8558 Green Rd., LA</li>
-                    <li class="phone">+1 (603) 555-0123</li>
+                    <li class="pin"><a href="https://maps.app.goo.gl/R94WUma43gbUTWSr6" target="_blank">8558 Green Rd.,
+                            LA</a></li>
+                    <li class="phone"><a href="tel:+16035550123">+1 (603) 555-0123</a></li>
                     <li class="clock">Mon-Sat: 9:00 AM – 23:00 PM</li>
                 </ul>
             </div>

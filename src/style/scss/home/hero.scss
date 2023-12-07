@@ -31,6 +31,8 @@ header {
     }
 
     .menu_item {
+        position: relative;
+        cursor: pointer;
         display: flex;
         width: 72px;
         height: 28px;
@@ -38,6 +40,7 @@ header {
         gap: 8px;
         align-items: center;
         margin: 0 auto;
+        line-height: 1;
         a {
             text-decoration: none;
             font-family: $font;
@@ -46,6 +49,22 @@ header {
             color: $text-color;
         }
     }
+    .menu_item:after {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        width: 0;
+        height: 2px;
+        background-color: $text-color;
+        content: "";
+        transition: width 0.3s ease-out;
+    }
+
+    .menu_item:hover:after,
+    .menu_item:focus:after {
+        width: 100%;
+    }
+
 }
 
 .hero {
@@ -82,21 +101,26 @@ header {
             line-height: 150%;
         }
         .offer_primary {
-            cursor: pointer;
+            transition: width 0.3s ease-out;
             display: flex;
+            position: relative;
+            cursor: pointer;
             width: 200px;
             padding: 20px 78px;
             justify-content: center;
             align-items: center;
+            text-decoration: none;
             gap: 8px;
             border-radius: 100px;
             background: $text-color-light;
             border: none;
-            font-family: $font;
-            color: $text-color;
-            font-size: 16px;
-            font-weight: 600;
-            line-height: 150%; 
+            .menu_span {
+                font-family: $font;
+                color: $text-color;
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 150%;
+            }
         }
     }
 }
