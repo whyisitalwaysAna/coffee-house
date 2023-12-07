@@ -32,10 +32,13 @@ header {
 
     .menu_item {
         display: flex;
+        width: 72px;
+        height: 28px;
         justify-content: space-between;
+        gap: 8px;
         align-items: center;
+        margin: 0 auto;
         a {
-            margin-right: 8px;
             text-decoration: none;
             font-family: $font;
             font-weight: 600;
