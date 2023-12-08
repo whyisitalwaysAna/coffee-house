@@ -4,7 +4,7 @@ $text-color-coffee: #B0907A;
 $font: 'Inter', sans-serif;
 
 .favorite {
-    height: 799px;
+    height: auto;
     margin-bottom: 100px;
     h2 {
         font-size: 3.75rem;
@@ -40,6 +40,8 @@ $font: 'Inter', sans-serif;
             border-radius: 50%;
             height: 60px;
             width: 60px;
+            cursor: pointer;
+            transition: 0.5s;
             div {
                 width: 24px;
                 height: 24px;
@@ -49,7 +51,14 @@ $font: 'Inter', sans-serif;
                 margin-left: 12px;
             }
         }
-
+        .arr:hover {
+            transition: 0.5s;
+            background: #665F55;
+            div {
+                border-top: 1px solid #E1D4C9;
+                border-right: 1px solid #E1D4C9;
+            }
+        }
     }
 
     .arrow_right {
@@ -64,6 +73,8 @@ $font: 'Inter', sans-serif;
             border-radius: 50%;
             height: 60px;
             width: 60px;
+            cursor: pointer;
+            transition: 0.5s;
             div {
                 width: 24px;
                 height: 24px;
@@ -73,7 +84,14 @@ $font: 'Inter', sans-serif;
                 margin-left: -12px;
             }
         }
-
+        .arr:hover {
+            transition: 0.5s;
+            background: #665F55;
+            div {
+                border-top: 1px solid #E1D4C9;
+                border-right: 1px solid #E1D4C9;
+            }
+        }
     }
 
     .slide {
@@ -114,6 +132,7 @@ $font: 'Inter', sans-serif;
     }
 
     .control {
+        cursor: pointer;
         width: 144px;
         height: 4px;
         display: flex;

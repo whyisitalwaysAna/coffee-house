@@ -42,7 +42,18 @@ footer {
             justify-content: center;
             align-items: center; 
             border-radius: 50%;
-            border: 1px solid #C1B6AD; 
+            border: 1px solid #C1B6AD;
+            transition: 0.5s;
+            svg {
+                stroke: #E1D4C9;
+            } 
+        }
+        .twitter:hover {
+            transition: 0.5s;
+            background: #E1D4C9;
+            svg {
+                stroke: #403F3D;
+            } 
         }
         .instagram {
             display: flex;
@@ -51,7 +62,18 @@ footer {
             justify-content: center;
             align-items: center; 
             border-radius: 50%;
-            border: 1px solid #C1B6AD; 
+            border: 1px solid #C1B6AD;
+            transition: 0.5s;
+            svg {
+                stroke: #E1D4C9;
+            }
+        }
+        .instagram:hover {
+            transition: 0.5s;
+            background: #E1D4C9;
+            svg {
+                stroke: #403F3D;
+            } 
         }
         .facebook {
             display: flex;
@@ -60,7 +82,18 @@ footer {
             justify-content: center;
             align-items: center; 
             border-radius: 50%;
-            border: 1px solid #C1B6AD; 
+            border: 1px solid #C1B6AD;
+            transition: 0.5s;
+            svg {
+                stroke: #E1D4C9;
+            } 
+        }
+        .facebook:hover {
+            transition: 0.5s;
+            background: #E1D4C9;
+            svg {
+                stroke: #403F3D;
+            } 
         }
     }
     }
@@ -88,11 +121,30 @@ footer {
             margin-left: 25px;
             text-decoration: none;
             li {
+                position: relative;
+                line-height: 1;
                 a {
+                    cursor: pointer;
                     text-decoration: none;
                     color: $text-color-light;
                 }
             }
+            li:after {
+                display: block;
+                position: absolute;
+                bottom: -7px;
+                width: 0;
+                height: 2px;
+                background-color: #E1D4C9;
+                content: "";
+                transition: width 0.3s ease-out;
+            }
+        
+            li:hover:after,
+            li:focus:after {
+                width: 100%;
+            }
+
             .pin {
                 list-style-image: url("../../../icons/pin-alt.svg");
             }

@@ -38,6 +38,7 @@ $font: 'Inter', sans-serif;
         gap: 16px;
         margin: 0 auto 40px auto;
         .coffee {
+            cursor: pointer;
             display: flex;
             padding: 8px 16px 8px 8px; 
             justify-content: center;
@@ -60,6 +61,7 @@ $font: 'Inter', sans-serif;
             }
         }
         .tea {
+            cursor: pointer;
             display: flex;
             padding: 8px 16px 8px 8px; 
             justify-content: center;
@@ -83,6 +85,7 @@ $font: 'Inter', sans-serif;
             }
         }
         .dessert {
+            cursor: pointer;
             display: flex;
             padding: 8px 16px 8px 8px; 
             justify-content: center;
