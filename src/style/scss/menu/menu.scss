@@ -15,7 +15,6 @@ $font: 'Inter', sans-serif;
 }
 
 .menu {
-    margin-bottom: 100px;
     h2 {
         max-width: 800px;
         text-align: center;
@@ -25,212 +24,214 @@ $font: 'Inter', sans-serif;
         font-weight: 600;
         line-height: 125%;
         font-size: 3.75rem;
+    }
         span {
             color: $text-color-coffee;
             font-style: italic;
         }
-    }
-
-    &_item {
-        width: 361px;
-        height: 46px;
-        display: flex;
-        gap: 16px;
-        margin: 0 auto 40px auto;
-        .coffee {
-            cursor: pointer;
+        &_item {
+            width: 361px;
+            height: 46px;
             display: flex;
-            padding: 8px 16px 8px 8px; 
-            justify-content: center;
-            align-items: center;
-            gap: 8px;
-            border-radius: 100px;
-            background: #665F55;
-            font-family: $font;
-            color: $text-color-light;
-            font-weight: 600;
-            line-height: 150%;
-            .icon {
+            gap: 16px;
+            margin: 0 auto 40px auto;
+            .coffee {
+                cursor: pointer;
                 display: flex;
-                width: 30px;
-                height: 30px;
+                padding: 8px 16px 8px 8px; 
                 justify-content: center;
                 align-items: center;
-                border-radius: 50%;
-                background: $text-color-light;
+                gap: 8px;
+                border-radius: 100px;
+                background: #665F55;
+                font-family: $font;
+                color: $text-color-light;
+                font-weight: 600;
+                line-height: 150%;
+                .icon {
+                    display: flex;
+                    width: 30px;
+                    height: 30px;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+                    background: $text-color-light;
+                }
             }
-        }
-        .tea {
-            cursor: pointer;
-            display: flex;
-            padding: 8px 16px 8px 8px; 
-            justify-content: center;
-            align-items: center;
-            gap: 8px;
-            border-radius: 100px;
-            border: 1px solid #C1B6AD;
-            font-family: $font;
-            color: $text-color;
-            font-weight: 600;
-            line-height: 150%;
-            .icon {
+            .tea {
+                cursor: pointer;
                 display: flex;
-                width: 30px;
-                height: 30px;
+                padding: 8px 16px 8px 8px; 
                 justify-content: center;
                 align-items: center;
-                border-radius: 50%;
-                background: $text-color-light;
-                background: #C1B6AD;
+                gap: 8px;
+                border-radius: 100px;
+                border: 1px solid #C1B6AD;
+                font-family: $font;
+                color: $text-color;
+                font-weight: 600;
+                line-height: 150%;
+                .icon {
+                    display: flex;
+                    width: 30px;
+                    height: 30px;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+                    background: $text-color-light;
+                    background: #C1B6AD;
+                }
             }
-        }
-        .dessert {
-            cursor: pointer;
-            display: flex;
-            padding: 8px 16px 8px 8px; 
-            justify-content: center;
-            align-items: center;
-            gap: 8px;
-            border-radius: 100px;
-            border: 1px solid #C1B6AD;
-            font-family: $font;
-            color: $text-color;
-            font-weight: 600;
-            line-height: 150%;
-            .icon {
+            .dessert {
+                cursor: pointer;
                 display: flex;
-                width: 30px;
-                height: 30px;
+                padding: 8px 16px 8px 8px; 
                 justify-content: center;
                 align-items: center;
-                border-radius: 50%;
-                background: #C1B6AD;
+                gap: 8px;
+                border-radius: 100px;
+                border: 1px solid #C1B6AD;
+                font-family: $font;
+                color: $text-color;
+                font-weight: 600;
+                line-height: 150%;
+                .icon {
+                    display: flex;
+                    width: 30px;
+                    height: 30px;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+                    background: #C1B6AD;
+                }
             }
         }
-    }
-
-    &_grid {
-        margin-bottom: 100px;
-        display: flex;
-        max-width: 1360px;
-        justify-content: center;
-        align-items: flex-start;
-        align-content: flex-start;
-        gap: 40px;
-        flex-wrap: wrap;
-        .menu_card {
-            position: relative;
+    
+        &_grid {
+            margin-bottom: 100px;
             display: flex;
-            height: 506px;
-            width: 310px;
-            flex-direction: column;
-            align-items: center; 
-            border-radius: 40px;
-            border: 1px solid #C1B6AD;
-            cursor: pointer;
-            &:before {
-                content: "";
-                position: absolute;
-                z-index: -1;
-                left: 14px;
-                bottom: 18px;
-                background: #d3c9bf;
-                height: 24px;
-                width: 24px;
-                border-radius: 32px;
-                transform: scale(1);
-                transform-origin: 50% 50%;
-                transition: transform 0.25s ease-out;
-              }
-            
-              &:hover:before {
-                transform: scale(1.5);
-              }
-            .card_photo-1 {
-                border-radius: 40px;
-                width: 100%;
-                height: 310px;
-                flex-shrink: 0; 
-                background: url("../../../img/coffee-1.jpg") center center / cover no-repeat;
-            }
-            .card_photo-2 {
-                border-radius: 40px;
-                width: 100%;
-                height: 310px;
-                flex-shrink: 0; 
-                background: url("../../../img/coffee-2.jpg") center center / cover no-repeat;
-            }
-            .card_photo-3 {
-                border-radius: 40px;
-                width: 100%;
-                height: 310px;
-                flex-shrink: 0; 
-                background: url("../../../img/coffee-3.jpg") center center / cover no-repeat;
-            }
-            .card_photo-4 {
-                border-radius: 40px;
-                width: 100%;
-                height: 310px;
-                flex-shrink: 0; 
-                background: url("../../../img/coffee-4.jpg") center center / cover no-repeat;
-            }
-            .card_photo-5 {
-                border-radius: 40px;
-                width: 100%;
-                height: 310px;
-                flex-shrink: 0; 
-                background: url("../../../img/coffee-5.jpg") center center / cover no-repeat;
-            }
-            .card_photo-6 {
-                border-radius: 40px;
-                width: 100%;
-                height: 310px;
-                flex-shrink: 0; 
-                background: url("../../../img/coffee-6.jpg") center center / cover no-repeat;
-            }
-            .card_photo-7 {
-                border-radius: 40px;
-                width: 100%;
-                height: 310px;
-                flex-shrink: 0; 
-                background: url("../../../img/coffee-7.jpg") center center / cover no-repeat;
-            }
-            .card_photo-8 {
-                border-radius: 40px;
-                width: 100%;
-                height: 310px;
-                flex-shrink: 0; 
-                background: url("../../../img/coffee-8.jpg") center center / cover no-repeat;
-            }
-            .card_content {
+            max-width: 1360px;
+            justify-content: center;
+            align-items: flex-start;
+            align-content: flex-start;
+            gap: 40px;
+            flex-wrap: wrap;
+            .menu_card {
+                position: relative;
                 display: flex;
-                padding: 20px;
+                height: 506px;
+                width: 310px;
                 flex-direction: column;
-                justify-content: space-between;
-                align-items: flex-start;
-                flex: 1 0 0;
-                align-self: stretch; 
-                .card_title {
-                    color: $text-color;
-                    font-family: $font;
-                    font-size: 1.5rem;
-                    font-weight: 600;
-                    line-height: 125%;
+                align-items: center; 
+                border-radius: 40px;
+                border: 1px solid #C1B6AD;
+                cursor: pointer;
+                &:before {
+                    content: "";
+                    position: absolute;
+                    z-index: -1;
+                    left: 14px;
+                    bottom: 18px;
+                    background: #d3c9bf;
+                    height: 24px;
+                    width: 24px;
+                    border-radius: 32px;
+                    transform: scale(1);
+                    transform-origin: 50% 50%;
+                    transition: transform 0.25s ease-out;
+                  }
+                
+                  &:hover:before {
+                    transform: scale(1.5);
+                  }
+                .card_photo-1 {
+                    border-radius: 40px;
+                    width: 100%;
+                    height: 310px;
+                    flex-shrink: 0; 
+                    background: url("../../../img/coffee-1.jpg") center center / cover no-repeat;
                 }
-                .card_descr {
-                    color: $text-color;
-                    font-family: $font;
-                    font-weight: 400;
-                    line-height: 150%;
+                .card_photo-2 {
+                    border-radius: 40px;
+                    width: 100%;
+                    height: 310px;
+                    flex-shrink: 0; 
+                    background: url("../../../img/coffee-2.jpg") center center / cover no-repeat;
                 }
-                .card_price {
-                    color: $text-color;
-                    font-family: $font;
-                    font-size: 1.5rem;
-                    font-weight: 600;
-                    line-height: 125%;
+                .card_photo-3 {
+                    border-radius: 40px;
+                    width: 100%;
+                    height: 310px;
+                    flex-shrink: 0; 
+                    background: url("../../../img/coffee-3.jpg") center center / cover no-repeat;
+                }
+                .card_photo-4 {
+                    border-radius: 40px;
+                    width: 100%;
+                    height: 310px;
+                    flex-shrink: 0; 
+                    background: url("../../../img/coffee-4.jpg") center center / cover no-repeat;
+                }
+                .card_photo-5 {
+                    border-radius: 40px;
+                    width: 100%;
+                    height: 310px;
+                    flex-shrink: 0; 
+                    background: url("../../../img/coffee-5.jpg") center center / cover no-repeat;
+                }
+                .card_photo-6 {
+                    border-radius: 40px;
+                    width: 100%;
+                    height: 310px;
+                    flex-shrink: 0; 
+                    background: url("../../../img/coffee-6.jpg") center center / cover no-repeat;
+                }
+                .card_photo-7 {
+                    border-radius: 40px;
+                    width: 100%;
+                    height: 310px;
+                    flex-shrink: 0; 
+                    background: url("../../../img/coffee-7.jpg") center center / cover no-repeat;
+                }
+                .card_photo-8 {
+                    border-radius: 40px;
+                    width: 100%;
+                    height: 310px;
+                    flex-shrink: 0; 
+                    background: url("../../../img/coffee-8.jpg") center center / cover no-repeat;
+                }
+                .card_content {
+                    display: flex;
+                    padding: 20px;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    flex: 1 0 0;
+                    align-self: stretch; 
+                    .card_title {
+                        color: $text-color;
+                        font-family: $font;
+                        font-size: 1.5rem;
+                        font-weight: 600;
+                        line-height: 125%;
+                    }
+                    .card_descr {
+                        color: $text-color;
+                        font-family: $font;
+                        font-weight: 400;
+                        line-height: 150%;
+                    }
+                    .card_price {
+                        color: $text-color;
+                        font-family: $font;
+                        font-size: 1.5rem;
+                        font-weight: 600;
+                        line-height: 125%;
+                    }
                 }
             }
         }
+        .refresh {
+            display: none;
+        }
     }
-}

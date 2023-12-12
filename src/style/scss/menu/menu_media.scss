@@ -1,0 +1,47 @@
+$text-color: #403F3D;
+$text-color-light: #E1D4C9;
+$text-color-coffee: #B0907A;
+$font: 'Inter', sans-serif;
+
+@media (max-width: 768px) {
+    .menu_card:nth-child(n+5) {
+        display: none;
+    }
+    .menu {
+        margin-bottom: 100px;
+        &_grid {
+            margin-bottom: 40px;
+        }
+        .refresh {
+            margin: 0 auto;
+            display: block;
+            width: 60px;
+            height: 60px;
+            &_wrapper {
+                display: flex;
+                justify-content: center;
+                width: 60px;
+                height: 60px;   
+                align-items: center; 
+                border-radius: 50%;
+                border: 1px solid #665F55;
+                transition: 0.5s;
+                svg {
+                    stroke: #403F3D;
+                } 
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .menu {
+        h2 {
+            font-size: 2rem;
+        }
+        .menu_item {
+            width: 345px;
+            gap: 8px;
+        }
+    }
+}
