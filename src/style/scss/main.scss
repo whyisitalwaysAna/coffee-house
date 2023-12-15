@@ -20,6 +20,11 @@ html {
   font-size: 16px;
   }
 
+.body-wrapper {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
 .container {
   max-width: 1440px;
   padding: 20px 40px 40px 40px;

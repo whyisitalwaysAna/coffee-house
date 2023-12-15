@@ -3,6 +3,11 @@ $text-color-light: #E1D4C9;
 $text-color-coffee: #B0907A;
 $font: 'Inter', sans-serif;
 
+.overflow {
+    height: 100vh;
+    overflow-y: hidden;
+}
+
 header {
     position: relative;
     display: grid;
@@ -49,7 +54,9 @@ header {
     }
 
     .menu_item {
-        position: relative;
+        position: absolute;
+        right: 0px;
+        top: 16px;
         cursor: pointer;
         display: flex;
         width: 72px;
@@ -82,9 +89,8 @@ header {
     .menu_item:focus:after {
         width: 100%;
     }
-
     .hamburger-wrapper {
-        display: none;
+        visibility: hidden;
         position: absolute;
         cursor: pointer;
         right: 0px;
@@ -99,21 +105,36 @@ header {
             .span-wrapper {
                 width: 16px;
                 height: 8px;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                align-items: center;    
+                position: relative;     
                 .span-1 {
+                    position: absolute;
                     display: block;
                     width: 16px;
                     height: 1px;
-                    background: #403F3D; 
+                    background: #403F3D;
+                    transition: all 0.3s ease 0s;
+                    transform: translateY(0px);
+                    will-change: transform;
                 }
                 .span-2 {
                     display: block;
+                    position: absolute;
                     width: 16px;
                     height: 1px;
+                    transform: translateY(7px);
                     background: #403F3D; 
+                    transition: all 0.3s ease 0s;
+                    will-change: transform;
+                }
+
+                /*крестик*/
+                .span-1-open {
+                    transition: all 0.3s ease 0s;
+                    transform: translateY(5px) rotate(-45deg);
+                }
+                .span-2-open {
+                    transform: translateY(5px) rotate(45deg);
+                    transition: all 0.3s ease 0s;
                 }
             }
         }
