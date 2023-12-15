@@ -22,6 +22,8 @@ buttonHamburger.addEventListener('click', function(event) {
 
     liHamburger.forEach(elem => {
         elem.addEventListener('click', function() {
+            spanHamburgerOne.classList.remove('span-1-open');
+            spanHamburgerTwo.classList.remove('span-2-open');
             body.classList.remove('overflow');
             bodyActive.classList.remove('body-wrapper-active')
             modalHamburger.classList.remove('nav-visible');
