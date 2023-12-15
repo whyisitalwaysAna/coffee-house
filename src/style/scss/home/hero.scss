@@ -8,6 +8,10 @@ $font: 'Inter', sans-serif;
     overflow-y: hidden;
 }
 
+.body-wrapper-active {
+    position: fixed;
+}
+
 header {
     position: relative;
     display: grid;
