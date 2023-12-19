@@ -135,11 +135,22 @@ $font: 'Inter', sans-serif;
                 }
                 .slide {
                     width: 348px;
-                    height: 532px;
-                    &_img {
-                        width: 348px;
-                        height: 348px;
+                    .slide_line {
+                        .slide-1, .slide-2, .slide-3 {
+                            width: 348px;
+                            height: 532px;
+                            .slide_img {
+                                width: 348px;
+                                height: 348px;
+                            }
+                        }
                     }
+                }
+            }
+            .control {
+                .control-line {
+                    width: 30px;
+                    height: 30px;
                 }
             }
         }

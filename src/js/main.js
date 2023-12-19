@@ -2,15 +2,14 @@
 
 window.addEventListener('DOMContentLoaded', function() {
 
-
-//hamburger
-let buttonHamburger = document.querySelector('.hamburger-wrapper');
-let modalHamburger = document.getElementById('nav-hamburger');
-let body = document.querySelector('body');
-let bodyActive = document.querySelector('.body-wrapper');
-let liHamburger = document.querySelectorAll('.li-hamburger');
-let spanHamburgerOne = document.querySelector('.span-1');
-let spanHamburgerTwo = document.querySelector('.span-2');
+//BURGER
+let buttonHamburger = document.querySelector('.hamburger-wrapper'),
+    modalHamburger = document.getElementById('nav-hamburger'),
+    body = document.querySelector('body'),
+    bodyActive = document.querySelector('.body-wrapper'),
+    liHamburger = document.querySelectorAll('.li-hamburger'),
+    spanHamburgerOne = document.querySelector('.span-1'),
+    spanHamburgerTwo = document.querySelector('.span-2');
 
 buttonHamburger.addEventListener('click', function(event) {
 
@@ -30,7 +29,74 @@ buttonHamburger.addEventListener('click', function(event) {
         });
     });
 
-})
+});
+
+//SLIDER
+const slideLine = document.querySelector('.slide_line'),
+      controlLine = document.querySelectorAll('.control-line');
+
+const slideProp = document.querySelector('.slide'),
+      slideStyle = window.getComputedStyle(slideProp),
+      slideWidth = parseInt(slideStyle.width);
+
+
+let sliderOffset = 0,
+    controlOffset = 0;
+
+function scrollNext() {
+    if (sliderOffset < (slideWidth * 2)) {
+        sliderOffset += slideWidth;
+        controlOffset++
+    } else {
+        sliderOffset = 0;
+        controlOffset = 0;
+    }
+
+    slideLine.style.left = -sliderOffset + 'px';
+    slideControls(controlOffset);
+};
+
+document.querySelector('.arrow_right').addEventListener('click', scrollNext);
+
+function scrollPrev() {
+    if (sliderOffset == 0) {
+        sliderOffset = slideWidth * 2;
+        controlOffset = 2;
+    } else {
+        sliderOffset -= slideWidth;
+        controlOffset--
+    }
+
+    slideLine.style.left = -sliderOffset + 'px';
+    slideControls(controlOffset);
+};
+
+document.querySelector('.arrow_left').addEventListener('click', scrollPrev);
+
+    //slider controls
+
+controlLine.forEach((line, index) => {
+    line.addEventListener('click', () => {
+        sliderOffset = slideWidth * index
+        slideLine.style.left = -sliderOffset + 'px';
+        controlOffset = index;
+        slideControls(controlOffset);
+    })
+});
+
+function slideControls(index) {
+    for (let line of controlLine) {
+        line.classList.remove('active');
+    }
+
+    controlLine[index].classList.add('active');
+};
+
+
+    //interval
+
+setInterval(scrollNext, 5000);
+
     
 
 });
