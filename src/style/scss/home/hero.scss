@@ -150,9 +150,17 @@ header {
     position: relative;
     border-radius: 40px;
     height: 644px;
-    background: url(../../../img/img-hero.jpg) center center /cover no-repeat;
     margin-bottom: 100px;
     padding: 100px 100px;
+
+    video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 40px;
+        max-width: 1360px;
+    }
+
     .offer {
         position: absolute;
         display: flex;
