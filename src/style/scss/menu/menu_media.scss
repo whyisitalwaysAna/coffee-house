@@ -4,7 +4,7 @@ $text-color-coffee: #B0907A;
 $font: 'Inter', sans-serif;
 
 @media (max-width: 768px) {
-    .menu_card:nth-child(n+5) {
+    div:nth-child(n+5) {
         display: none;
     }
     .menu {
@@ -30,6 +30,9 @@ $font: 'Inter', sans-serif;
                     stroke: #403F3D;
                 } 
             }
+            // .active {
+                
+            // }
         }
     }
 }
