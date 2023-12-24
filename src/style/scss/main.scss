@@ -31,5 +31,31 @@ html {
   margin: 0 auto;
 }
 
+.up {
+  visibility: hidden;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $main-color;
+  border: 1px solid #B0907A;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  div {
+      width: 17px;
+      height: 17px;
+      border-top: 1px solid #B0907A;
+      border-right: 1px solid #B0907A;
+      transform: rotate(-45deg);
+      margin-top: 8px;
+  }
+}
+.up-active {
+  visibility: visible;
+}
 
 

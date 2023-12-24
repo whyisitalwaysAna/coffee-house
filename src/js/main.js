@@ -2,6 +2,31 @@
 
 window.addEventListener('DOMContentLoaded', function() {
 
+//SCROLL
+window.addEventListener('scroll', function () {
+    const scrollPosition = window.scrollY;
+
+    let scrollHeight = Math.max(
+        document.body.scrollHeight, document.documentElement.scrollHeight,
+        document.body.offsetHeight, document.documentElement.offsetHeight,
+        document.body.clientHeight, document.documentElement.clientHeight
+      );
+
+    let scrollSum = scrollHeight / 2;
+
+    let scrollUp = document.querySelector('.up');
+
+    function visibleScroll() {
+        if (scrollPosition >= scrollSum) {
+            scrollUp.classList.add('up-active');
+        } else {
+            scrollUp.classList.remove('up-active');
+        }
+    }
+    visibleScroll();
+  });
+  
+
 //BURGER
 let buttonHamburger = document.querySelector('.hamburger-wrapper'),
     modalHamburger = document.getElementById('nav-hamburger'),

@@ -1,5 +1,6 @@
 'use strict'
 
+//MENU
 window.addEventListener('DOMContentLoaded', function() {
     function createCard() {
         const coffeeWrapper = document.querySelector('.coffee_grid'),
@@ -26,6 +27,7 @@ window.addEventListener('DOMContentLoaded', function() {
             }
           }
           
+          //COFFEE MENU
           async function displayDataCoffee() {
             const data = await fetchData();
     
@@ -70,6 +72,7 @@ window.addEventListener('DOMContentLoaded', function() {
           displayDataCoffee();
     
     
+          //TEA MENU
           async function displayDataTea() {
             const data = await fetchData();
     
@@ -106,6 +109,7 @@ window.addEventListener('DOMContentLoaded', function() {
           }
           displayDataTea();
     
+          //DESSERT MENU
           async function displayDataDessert() {
             const data = await fetchData();
     
