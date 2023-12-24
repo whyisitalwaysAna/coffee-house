@@ -44,6 +44,7 @@ window.addEventListener('DOMContentLoaded', function() {
                 if (coffeeWrapper.classList.contains('active') && product.category === "coffee") {
     
                     const cardElement = document.createElement('div');
+                    cardElement.classList.add('card-element');
     
                     cardElement.innerHTML = `
                     <div class="menu_card">
@@ -56,8 +57,14 @@ window.addEventListener('DOMContentLoaded', function() {
                     </div>
                     `
                     coffeeWrapper.appendChild(cardElement)
+
+                    const refreshIcon = document.querySelector('.refresh')
+
+                    refreshIcon.addEventListener('click', () => {
+                        cardElement.classList.toggle('card-element-active');
+                    })
                 }
-    
+                
               });
           }
           displayDataCoffee();
@@ -117,6 +124,7 @@ window.addEventListener('DOMContentLoaded', function() {
                 if (product.category === "dessert") {
         
                     const cardElement = document.createElement('div');
+                    cardElement.classList.add('card-element');
     
                     cardElement.innerHTML = `
                     <div class="menu_card">
@@ -129,6 +137,12 @@ window.addEventListener('DOMContentLoaded', function() {
                     </div>
                     `
                     dessertWrapper.appendChild(cardElement)
+
+                    const refreshIcon = document.querySelector('.refresh')
+
+                    refreshIcon.addEventListener('click', () => {
+                        cardElement.classList.toggle('card-element-active');
+                    })
                 }
         
             });
@@ -138,15 +152,6 @@ window.addEventListener('DOMContentLoaded', function() {
     
     createCard();
 
-
-    function toggleMenu() {
-        const refreshIcon = document.querySelector('.refresh')
-
-        refreshIcon.addEventListener('click', () => {
-
-        })
-    }
-    toggleMenu();
 });
 
 

@@ -4,9 +4,26 @@ $text-color-coffee: #B0907A;
 $font: 'Inter', sans-serif;
 
 @media (max-width: 768px) {
-    div:nth-child(n+5) {
+    .card-element:nth-child(5),
+    .card-element:nth-child(6),
+    .card-element:nth-child(7),
+    .card-element:nth-child(8) {
         display: none;
     }
+    .card-element-active:nth-child(1),
+    .card-element-active:nth-child(2),
+    .card-element-active:nth-child(3),
+    .card-element-active:nth-child(4) {
+        display: none;
+    }
+
+    .card-element-active:nth-child(5),
+    .card-element-active:nth-child(6),
+    .card-element-active:nth-child(7),
+    .card-element-active:nth-child(8) {
+        display: block;
+    }
+    
     .menu {
         margin-bottom: 100px;
         &_grid {
@@ -30,9 +47,6 @@ $font: 'Inter', sans-serif;
                     stroke: #403F3D;
                 } 
             }
-            // .active {
-                
-            // }
         }
     }
 }
