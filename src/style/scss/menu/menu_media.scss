@@ -4,6 +4,13 @@ $text-color-coffee: #B0907A;
 $font: 'Inter', sans-serif;
 
 @media (max-width: 768px) {
+    .modal-js {
+        .modal_overflow {
+            .modal_frame {
+                max-width: 626px;
+            }
+        }
+    }
     .card-element:nth-child(5),
     .card-element:nth-child(6),
     .card-element:nth-child(7),
@@ -51,7 +58,30 @@ $font: 'Inter', sans-serif;
     }
 }
 
+@media (max-width: 626px) {
+    .modal-js {
+        .modal_overflow {
+            .modal_frame {
+                max-width: 342px;
+                .modal_img {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 400px) {
+    .modal-js {
+        .modal_overflow {
+            .modal_frame {
+                max-width: 342px;
+                .modal_img {
+                    display: none;
+                }
+            }
+        }
+    }
     .menu {
         h2 {
             font-size: 2rem;
