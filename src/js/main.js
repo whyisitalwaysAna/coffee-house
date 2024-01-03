@@ -101,7 +101,8 @@ document.querySelector('.arrow_left').addEventListener('click', scrollPrev);
     //slider controls
 
 controlLine.forEach((line, index) => {
-    line.addEventListener('click', () => {
+    line.addEventListener('click', (event) => {
+        event.preventDefault();
         sliderOffset = slideWidth * index
         slideLine.style.left = -sliderOffset + 'px';
         controlOffset = index;
@@ -117,12 +118,10 @@ function slideControls(index) {
     controlLine[index].classList.add('active');
 };
 
-
     //interval
 
-setInterval(scrollNext, 5000);
+    setInterval(scrollNext, 5000)
 
-    
 
 });
 

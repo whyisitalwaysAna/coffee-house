@@ -41,7 +41,7 @@ $font: 'Inter', sans-serif;
             height: 60px;
             width: 60px;
             cursor: pointer;
-            transition: 0.5s;
+            transition: all 0.5s;
             div {
                 width: 24px;
                 height: 24px;
@@ -52,7 +52,7 @@ $font: 'Inter', sans-serif;
             }
         }
         .arr:hover {
-            transition: 0.5s;
+            transition: all 0.5s;
             background: #665F55;
             div {
                 border-top: 1px solid #E1D4C9;
@@ -74,7 +74,7 @@ $font: 'Inter', sans-serif;
             height: 60px;
             width: 60px;
             cursor: pointer;
-            transition: 0.5s;
+            transition: all 0.5s;
             div {
                 width: 24px;
                 height: 24px;
@@ -85,7 +85,7 @@ $font: 'Inter', sans-serif;
             }
         }
         .arr:hover {
-            transition: 0.5s;
+            transition: all 0.5s;
             background: #665F55;
             div {
                 border-top: 1px solid #E1D4C9;

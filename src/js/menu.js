@@ -58,7 +58,8 @@ window.addEventListener("DOMContentLoaded", function () {
       const data = await fetchData();
 
       data.forEach((product) => {
-        navigationCoffee.addEventListener("click", () => {
+        navigationCoffee.addEventListener("click", (event) => {
+          event.preventDefault();
           navigationTea.classList.remove("active");
           navigationDessert.classList.remove("active");
           teaWrapper.classList.remove("active");
@@ -275,7 +276,8 @@ window.addEventListener("DOMContentLoaded", function () {
       const data = await fetchData();
 
       data.forEach((product) => {
-        navigationTea.addEventListener("click", () => {
+        navigationTea.addEventListener("click", (event) => {
+          event.preventDefault();
           navigationCoffee.classList.remove("active");
           navigationDessert.classList.remove("active");
           coffeeWrapper.classList.remove("active");
@@ -482,7 +484,8 @@ window.addEventListener("DOMContentLoaded", function () {
       const data = await fetchData();
 
       data.forEach((product) => {
-        navigationDessert.addEventListener("click", () => {
+        navigationDessert.addEventListener("click", (event) => {
+          event.preventDefault();
           navigationCoffee.classList.remove("active");
           navigationTea.classList.remove("active");
           coffeeWrapper.classList.remove("active");
