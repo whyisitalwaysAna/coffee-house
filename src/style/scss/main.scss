@@ -1,12 +1,18 @@
-// $text-color: #403F3D;
-// $main-color: #E1D4C9;
 @import "home/hero.scss";
+@import "home/favorite.scss";
+@import "home/about.scss";
+@import "home/offer.scss";
+@import "home/footer.scss";
+@import "menu/menu.scss";
+@import "home/media.scss";
+@import "menu/menu_media.scss";
 $main-color: #E1D4C9;
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
   }
 
 html {
@@ -14,11 +20,42 @@ html {
   font-size: 16px;
   }
 
+.body-wrapper {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
 .container {
   max-width: 1440px;
   padding: 20px 40px 40px 40px;
   margin: 0 auto;
 }
 
+.up {
+  visibility: hidden;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $main-color;
+  border: 1px solid #B0907A;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  div {
+      width: 17px;
+      height: 17px;
+      border-top: 1px solid #B0907A;
+      border-right: 1px solid #B0907A;
+      transform: rotate(-45deg);
+      margin-top: 8px;
+  }
+}
+.up-active {
+  visibility: visible;
+}
 
 

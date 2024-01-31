@@ -1,0 +1,94 @@
+$text-color: #403F3D;
+$text-color-light: #E1D4C9;
+$text-color-coffee: #B0907A;
+$font: 'Inter', sans-serif;
+
+@media (max-width: 768px) {
+    .modal-js {
+        .modal_overflow {
+            .modal_frame {
+                max-width: 626px;
+            }
+        }
+    }
+    .card-element:nth-child(5),
+    .card-element:nth-child(6),
+    .card-element:nth-child(7),
+    .card-element:nth-child(8) {
+        display: none;
+    }
+    .card-element-active:nth-child(1),
+    .card-element-active:nth-child(2),
+    .card-element-active:nth-child(3),
+    .card-element-active:nth-child(4) {
+        display: none;
+    }
+
+    .card-element-active:nth-child(5),
+    .card-element-active:nth-child(6),
+    .card-element-active:nth-child(7),
+    .card-element-active:nth-child(8) {
+        display: block;
+    }
+    
+    .menu {
+        margin-bottom: 100px;
+        &_grid {
+            margin-bottom: 40px;
+        }
+        .refresh {
+            margin: 0 auto;
+            display: block;
+            width: 60px;
+            height: 60px;
+            &_wrapper {
+                display: flex;
+                justify-content: center;
+                width: 60px;
+                height: 60px;   
+                align-items: center; 
+                border-radius: 50%;
+                border: 1px solid #665F55;
+                transition: 0.5s;
+                svg {
+                    stroke: #403F3D;
+                } 
+            }
+        }
+    }
+}
+
+@media (max-width: 626px) {
+    .modal-js {
+        .modal_overflow {
+            .modal_frame {
+                max-width: 342px;
+                .modal_img {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .modal-js {
+        .modal_overflow {
+            .modal_frame {
+                max-width: 342px;
+                .modal_img {
+                    display: none;
+                }
+            }
+        }
+    }
+    .menu {
+        h2 {
+            font-size: 2rem;
+        }
+        .menu_item {
+            width: 345px;
+            gap: 8px;
+        }
+    }
+}

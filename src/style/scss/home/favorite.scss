@@ -1,0 +1,162 @@
+$text-color: #403F3D;
+$text-color-light: #E1D4C9;
+$text-color-coffee: #B0907A;
+$font: 'Inter', sans-serif;
+
+.favorite {
+    height: auto;
+    margin-bottom: 100px;
+    h2 {
+        font-size: 3.75rem;
+        font-family: $font;
+        color: $text-color;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 40px;
+        line-height: 125%;
+        span {
+            color: $text-color-coffee;
+            font-style: italic;
+        }
+    }
+
+    .slider {
+        height: 640px;
+        display: grid;
+        grid-template-columns: 60px 1fr 60px;
+        justify-items: center;
+        margin-bottom: 40px;
+    }
+
+    .arrow_left {
+        display:flex;
+        align-items: center;
+        .arr {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: none;
+            border: 1px solid #665F55;
+            border-radius: 50%;
+            height: 60px;
+            width: 60px;
+            cursor: pointer;
+            transition: all 0.5s;
+            div {
+                width: 24px;
+                height: 24px;
+                border-top: 1px solid #665F55;
+                border-right: 1px solid #665F55;
+                transform: rotate(-135deg);
+                margin-left: 12px;
+            }
+        }
+        .arr:hover {
+            transition: all 0.5s;
+            background: #665F55;
+            div {
+                border-top: 1px solid #E1D4C9;
+                border-right: 1px solid #E1D4C9;
+            }
+        }
+    }
+
+    .arrow_right {
+        display: flex;
+        align-items: center;
+        .arr {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: none;
+            border: 1px solid #665F55;
+            border-radius: 50%;
+            height: 60px;
+            width: 60px;
+            cursor: pointer;
+            transition: all 0.5s;
+            div {
+                width: 24px;
+                height: 24px;
+                border-top: 1px solid #665F55;
+                border-right: 1px solid #665F55;
+                transform: rotate(45deg);
+                margin-left: -12px;
+            }
+        }
+        .arr:hover {
+            transition: all 0.5s;
+            background: #665F55;
+            div {
+                border-top: 1px solid #E1D4C9;
+                border-right: 1px solid #E1D4C9;
+            }
+        }
+    }
+
+
+    .slide {
+        width: 480px;
+        height: 640px;
+        overflow: hidden;
+        .slide_line {
+            display: flex;
+            transition: all 0.5s;
+            position: relative; 
+            .slide-1, .slide-2, .slide-3 {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 480px;
+                height: 640px;
+                .slide_img {
+                    max-width: 480px;
+                    height: 480px;
+                    margin-bottom: 20px;
+                }
+                .slide_header {
+                    color: $text-color;
+                    font-family: $font;
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    line-height: 125%;
+                    margin-bottom: 16px;
+                }
+                .slide_descr {
+                    color: $text-color;
+                    font-family: $font;
+                    font-weight: 400;
+                    line-height: 150%;
+                    margin-bottom: 16px;
+                    text-align: center;
+                }
+                .slide_price {
+                    color: $text-color;
+                    font-family: $font;
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    line-height: 125%;
+                }
+        }
+        }
+    }
+
+    .control {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        width: 144px;
+        height: 4px;
+        .control-line {
+            cursor: pointer;
+            width: 40px;
+            height: 4px; 
+            border-radius: 100px; 
+            background: #C1B6AD;
+        }
+        .active {
+            background: #665F55;
+        }
+    }
+}
